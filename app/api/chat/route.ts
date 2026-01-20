@@ -1,7 +1,7 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getResumeContext } from "@/app/lib/resumeContext";
 
 export const maxDuration = 30;
+export const dynamic = 'force-dynamic';
 
 export async function POST(req: Request) {
     const apiKey = process.env.GOOGLE_API_KEY;
@@ -12,6 +12,7 @@ export async function POST(req: Request) {
     }
 
     try {
+        const { GoogleGenerativeAI } = await import("@google/generative-ai");
         const { messages } = await req.json();
         const systemPrompt = getResumeContext();
 
@@ -21,8 +22,6 @@ export async function POST(req: Request) {
             systemInstruction: systemPrompt,
         });
 
-        // Convert messages to history format required by Gemini
-        // Note: Gemini history excludes the latest message which is sent in sendMessage
         const history = messages.slice(0, -1).map((m: { role: string; content: string }) => ({
             role: m.role === "user" ? "user" : "model",
             parts: [{ text: m.content }],

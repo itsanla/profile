@@ -13,9 +13,7 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
-  outputFileTracingIncludes: {
-    '/api/chat': ['./app/lib/**/*', './data/**/*'],
-  },
+  outputFileTracing: false,
 };
 
 export default nextConfig;
