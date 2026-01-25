@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Anla Harpanda", url: "https://www.linkedin.com/in/anlaharpanda" }],
   creator: "Anla Harpanda",
   publisher: "Anla Harpanda",
-  metadataBase: new URL('https://personal-landing-nu.vercel.app'),
+  metadataBase: new URL('https://anla.my.id'),
   alternates: {
     canonical: '/',
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://www.linkedin.com/in/anlaharpanda",
+    url: "https://anla.my.id",
     title: "Anla Harpanda | Full Stack Web Developer & UI/UX Designer",
     description: "Full Stack Web Developer & UI/UX Designer specializing in Express.js, Next.js, Laravel, Vue.js, and React. Based in Padang, Indonesia.",
     siteName: "Anla Harpanda - Web Developer Portfolio",
@@ -120,12 +120,14 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Anla Harpanda",
-              url: "https://www.linkedin.com/in/anlaharpanda",
-              image: "/pfp.jpeg",
+              alternateName: ["Anla", "itsanla", "anla.id"],
+              url: "https://anla.my.id",
+              image: "https://anla.my.id/pfp.jpeg",
               jobTitle: "Full Stack Web Developer & UI/UX Designer",
-              description: "Full Stack Web Developer & UI/UX Designer specializing in Express.js, Next.js, Laravel, Vue.js, and React",
+              description: "Full Stack Web Developer & UI/UX Designer specializing in Express.js, Next.js, Laravel, Vue.js, and React. Based in Padang, Indonesia.",
               sameAs: [
-                "https://www.linkedin.com/in/anlaharpanda"
+                "https://www.linkedin.com/in/anlaharpanda",
+                "https://github.com/itsanla"
               ],
               knowsAbout: [
                 "Full Stack Development",

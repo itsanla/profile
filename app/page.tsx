@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Home | Anla Harpanda - Full Stack Web Developer",
     description: "Welcome to my portfolio! I'm a Full Stack Web Developer & UI/UX Designer specializing in modern web technologies.",
-    url: "https://www.linkedin.com/in/anlaharpanda",
+    url: "https://anla.my.id",
     siteName: "Anla Harpanda Portfolio",
   },
 };
@@ -28,11 +28,12 @@ export default function Home() {
         name="Anla Harpanda"
         jobTitle="Full Stack Web Developer & UI/UX Designer"
         description="Full Stack Web Developer & UI/UX Designer specializing in Express.js, Next.js, Laravel, Vue.js, and React. Based in Padang, Indonesia."
-        url="https://www.linkedin.com/in/anlaharpanda"
-        image="/pfp.jpeg"
+        url="https://anla.my.id"
+        image="https://anla.my.id/pfp.jpeg"
         email="anlaharpanda@gmail.com"
         sameAs={[
-          "https://www.linkedin.com/in/anlaharpanda"
+          "https://www.linkedin.com/in/anlaharpanda",
+          "https://github.com/itsanla"
         ]}
       />
       <WebsiteStructuredData />

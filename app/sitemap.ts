@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import projects from '../data/projects'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.linkedin.com/in/anlaharpanda'
+  const baseUrl = 'https://anla.my.id'
 
   // Static pages
   const staticPages = [

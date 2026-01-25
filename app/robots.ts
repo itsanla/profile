@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/', '/_next/'],
     },
-    sitemap: 'https://www.linkedin.com/in/anlaharpanda/sitemap.xml',
+    sitemap: 'https://anla.my.id/sitemap.xml',
   }
 }

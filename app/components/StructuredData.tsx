@@ -129,14 +129,14 @@ export function WebsiteStructuredData() {
     "@type": "WebSite",
     name: "Anla Harpanda Portfolio",
     description: "Full Stack Web Developer & UI/UX Designer specializing in Express.js, Next.js, Laravel, and Vue.js",
-    url: "https://www.linkedin.com/in/anlaharpanda",
+    url: "https://anla.my.id",
     author: {
       "@type": "Person",
       name: "Anla Harpanda",
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.linkedin.com/in/anlaharpanda",
+      target: "https://anla.my.id/projects?search={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
