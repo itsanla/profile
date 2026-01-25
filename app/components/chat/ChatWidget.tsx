@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import { MessageSquare, X, Send, Mail, Github, Linkedin } from "lucide-react";
+import { MessageSquare, X, Mail, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 import { contactInfo } from "@/data/contact";
 
